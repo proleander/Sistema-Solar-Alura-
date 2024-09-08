@@ -1,0 +1,116 @@
+/* Estiliza o corpo */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Cor de fundo padrão */
+    background-image: url('imagens/sistema solar.jpg'); /* Imagem de fundo padrão */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Estiliza o campo de resultados da pesquisa */
+.resultados-pesquisa {
+    display: none; /* Oculta o elemento por padrão */
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 20px auto; /* Espaçamento externo e centralização horizontal */
+    max-width: 800px; /* Largura máxima para evitar que vá até as laterais */
+    width: 90%; /* Largura relativa para ajuste responsivo */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura total */
+}
+
+/* Mostra o campo de resultados somente quando há conteúdo */
+.resultados-pesquisa.visible {
+    display: block; /* Exibe o elemento quando a classe 'visible' é adicionada */
+}
+
+/* Estiliza o cabeçalho */
+header h1 {
+    color: #fff; /* Cor do texto */
+    font-size: 2em; /* Tamanho da fonte, ajuste conforme necessário */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.7), /* Sombra preta para contraste */
+        -1px -1px 2px rgba(0, 0, 0, 0.7), /* Outra sombra para criar contorno */
+        1px -1px 2px rgba(0, 0, 0, 0.7), /* Outra sombra para criar contorno */
+        -1px 1px 2px rgba(0, 0, 0, 0.7); /* Outra sombra para criar contorno */
+}
+
+/* Estiliza o campo de pesquisa */
+input[type="text"] {
+    border: 2px solid #ccc; /* Borda clara para contraste */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo branco transparente */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1em; /* Ajusta o tamanho da fonte */
+    color: #333; /* Cor do texto */
+    outline: none; /* Remove o contorno padrão do foco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 0.5); /* Aumenta a opacidade quando focado */
+    border-color: #111111; /* Muda a cor da borda ao focar */
+}
+
+/* Estiliza o texto do placeholder */
+input[type="text"]::placeholder {
+    color: #000; /* Cor do texto do placeholder (preto) */
+    opacity: 1; /* Garantir que a opacidade do placeholder seja total */
+    font-size: 1em; /* Ajusta o tamanho da fonte do placeholder */
+    text-shadow: 
+        -1px -1px 2px rgba(255, 255, 255, 0.7), /* Outra sombra para criar contorno */
+        1px -1px 2px rgba(255, 255, 255, 0.7), /* Outra sombra para criar contorno */
+        -1px 1px 2px rgba(0, 0, 0, 0.7); /* Outra sombra para criar contorno */
+}
+
+/* Estiliza o botão */
+button {
+    padding: 10px;
+}
+
+/* Estiliza o resultado da pesquisa */
+.resultado {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza o rodapé */
+footer {
+    margin-top: 20px;
+    text-shadow: 
+        2px 2px 4px rgba(252, 249, 249, 0.7), /* Sombra preta para contraste */
+        -1px -1px 2px rgba(255, 255, 255, 0.7), /* Outra sombra para criar contorno */
+        1px -1px 2px rgba(255, 255, 255, 0.7), /* Outra sombra para criar contorno */
+        -1px 1px 2px rgba(0, 0, 0, 0.7); /* Outra sombra para criar contorno */
+}
+button {
+    padding: 10px 20px; /
+    border: 2px solid #ffffff; 
+    border-radius: 12px; 
+    background-color: rgba(245, 247, 250, 0.1); 
+    color: #0c0c0c;
+    font-size: 1em; 
+    cursor: pointer; 
+    outline: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(223, 228, 233, 0.2); /* Aumenta a opacidade do fundo ao passar o mouse */
+    border-color: #fdfeff; /* Escurece a cor da borda ao passar o mouse */
+}
+
+button:active {
+    background-color: rgba(5, 5, 5, 0.3); /* Aumenta a opacidade do fundo quando clicado */
+    border-color: #92979c; /* Escurece ainda mais a cor da borda quando clicado */
+}
